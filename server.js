@@ -23,7 +23,7 @@ var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
   originWhitelist: originWhitelist,
-  requireHeader: [],
+  requireHeader: ["http://pluto.tv","https://smashystream.com"],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
     'cookie',
